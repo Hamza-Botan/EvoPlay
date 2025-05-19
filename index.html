@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EvoPlay - Your Ultimate Gaming Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>EvoPlay</h1>
+      </div>
+
+      <!-- Hidden checkbox to toggle menu -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html" onclick="document.getElementById('menu-toggle').checked = false;">Home</a></li>
+        <li><a href="games.html" onclick="document.getElementById('menu-toggle').checked = false;">Games</a></li>
+        <li><a href="cart.html" onclick="document.getElementById('menu-toggle').checked = false;">
+          <i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="contact.html" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+        <li><a href="user.html" onclick="document.getElementById('menu-toggle').checked = false;">
+          <i class="fa-solid fa-user"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Level Up Your Gaming Experience</h2>
+  </section>
+
+  <!-- Background Video -->
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="public/game.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Featured Products Section -->
+  <section class="featured-products">
+    <h3>Featured Games</h3>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="public/CounterStrike.jpeg" alt="Counter-Strike" />
+        <h4>Counter-Strike 2 & GO</h4>
+        <a href="games.html" class="btn-primary">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <img src="public/Minecraft.jpeg" alt="Minecraft" />
+        <h4>Minecraft</h4>
+        <a href="games.html" class="btn-primary">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <img src="public/Fortnite.jpeg" alt="Fortnite" />
+        <h4>Fortnite</h4>
+        <a href="games.html" class="btn-primary">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EvoPlay. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+    </p>
+  </footer>
+
+</body>
+</html>

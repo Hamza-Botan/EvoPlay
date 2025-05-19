@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Login - Evoplay</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
+</head>
+<body class="user-page">
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+       <a href="index.html"> <h1>Evoplay</h1></a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="user.html">User</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <!-- Login Form -->
+    <div class="form-container" id="login">
+      <div class="form-box">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" name="email" required />
+
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="password" required />
+
+          <button type="submit">Login</button>
+        </form>
+        <div class="form-toggle">
+          Don't have an account? <a href="user.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
